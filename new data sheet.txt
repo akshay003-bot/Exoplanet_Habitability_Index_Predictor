@@ -1,0 +1,675 @@
+Here’s the explanation for the columns given in the dataset:
+
+1. P_NAME:
+Name of the exoplanet. It serves as the unique identifier for the planet.
+Impact: 0
+Just an identifier; does not affect habitability.
+
+
+2. P_DETECTION:
+Detection method used to identify the exoplanet (e.g., Transit, Radial Velocity).
+Impact: 2
+Detection method affects data reliability, not the planet’s habitability itself.
+Detection Methods:
+Astrometry - 0
+Disk Kinematics - 1
+Eclipse Timing Variations - 2
+Imaging - 3
+Microlensing - 4
+Orbital Brightness Modulation - 5
+Pulsar Timing - 6
+Pulsation Timing Variations - 7
+Radial Velocity - 8
+Transit - 9
+Transit Timing Variations - 10
+
+
+
+
+3. P_DISCOVERY_FACILITY:
+The observatory or facility where the exoplanet was discovered.
+Impact: 0
+Facility name has no effect on habitability.
+
+
+4. P_YEAR:
+Year of discovery of the exoplanet.
+Impact: 0
+Discovery year is historical, not scientific for habitability.
+
+5. P_UPDATE:
+Date when the exoplanet's data was last updated.
+Impact: 0
+Data update date does not impact habitability.
+
+6. P_MASS:
+The mass of the exoplanet, generally expressed in Earth or Jupiter masses.
+Impact: 10
+Critical; determines gravity, atmosphere retention, and potential for life.
+
+7. P_MASS_ORIGIN:
+Source or method used to determine the exoplanet’s mass (e.g., Transit Timing, Radial Velocity).
+Impact: 2
+Affects confidence in mass value, not habitability directly.
+Mass Columns:
+M-R relationship - 0
+Mass - 1
+Msin(i)/sin(i) - 2
+Msini - 3
+
+
+8. P_RADIUS:
+The radius of the exoplanet, often measured relative to Earth or Jupiter radii.
+Impact: 10
+Crucial for surface conditions, gravity, and atmosphere retention.
+
+
+9. P_PERIOD:
+Orbital period of the exoplanet, representing the time it takes to complete one orbit around its host star.
+Impact: 7
+Orbital period affects temperature and potential for stable climates.
+
+
+10. P_SEMI_MAJOR_AXIS:
+Semi-major axis of the exoplanet’s orbit, representing its average distance from the host star.
+Impact: 9
+Determines planet’s distance from star, key for temperature and habitable zone.
+
+
+11. P_ECCENTRICITY:
+Orbital eccentricity of the exoplanet, describing the deviation of its orbit from a perfect circle.
+Impact: 6
+High eccentricity can cause extreme temperature swings, affecting habitability.
+
+
+12. P_INCLINATION:
+Inclination of the exoplanet’s orbital plane relative to the line of sight from Earth.
+Impact: 1
+Affects detection, not habitability.
+
+
+13. P_OMEGA:
+Argument of periapsis, describing the orientation of the exoplanet's orbit within its orbital plane.
+Impact: 0
+Orbital orientation does not affect habitability.
+
+
+14. S_NAME:
+The name of the host star associated with the exoplanet.
+Impact: 0
+Host star name only; no effect on habitability.
+
+
+15. S_NAME_HD:
+Identifier of the host star in the Henry Draper Catalog.
+Impact: 0
+Catalog identifier; no effect on habitability.
+
+
+16. S_NAME_HIP:
+Identifier of the host star in the Hipparcos Catalog.
+Impact: 0
+Catalog identifier; no effect on habitability.
+
+
+17. S_TYPE:
+Spectral type of the host star, indicating its classification based on temperature and luminosity (e.g., G-type, M-type).
+Impact: 8
+Star type determines luminosity and habitable zone location.
+Spectral Types:
+A - 0
+A1 IV-V - 1
+A2 V - 2
+A5 - 3
+A5 V - 4
+A5-A6 - 5
+A5V - 6
+A7 V - 7
+A8 - 8
+A8 III - 9
+A8 V - 10
+A8Ve - 11
+Am C - 12
+B - 13
+B2 IV - 14
+B2.5 V - 15
+B9 IV - 16
+B9 V - 17
+B9 Vne - 18
+B9.5-A0 - 19
+Be9.5/AO - 20
+DQ - 21
+F - 22
+F V - 23
+F0 - 24
+F0 IV - 25
+F1 V - 26
+F2 - 27
+F2 V - 28
+F3 V - 29
+F4 - 30
+F4 V - 31
+F5 - 32
+F5 IV - 33
+F5 V - 34
+F5-F8 V - 35
+F5V - 36
+F6 - 37
+F6 IV - 38
+F6 IV-V - 39
+F6 V - 40
+F7 - 41
+F7 V - 42
+F7/F8V - 43
+F7V - 44
+F8 - 45
+F8 IV - 46
+F8 IV/V - 47
+F8 V - 48
+F8 V CH+0.4 - 49
+F8/G0 IV/V - 50
+F8/G0 V - 51
+F9 - 52
+F9 IV - 53
+F9 V - 54
+F9.5 V - 55
+G - 56
+G V - 57
+G0 - 58
+G0 IV - 59
+G0 V - 60
+G0 VI - 61
+G0/1 V - 62
+G0/2 V - 63
+G0/F9 V - 64
+G0V - 65
+G0Vvar - 66
+G1 - 67
+G1 IV - 68
+G1 V - 69
+G1-1.5 V - 70
+G1.5 V - 71
+G2 - 72
+G2 IV - 73
+G2 V - 74
+G2/3 V - 75
+G2/3V - 76
+G2/G3 - 77
+G2/G3 IV/V - 78
+G2/G3 V - 79
+G2V - 80
+G3 - 81
+G3 III - 82
+G3 IV - 83
+G3 IV-V - 84
+G3 IV/V - 85
+G3 V - 86
+G3/5 V - 87
+G3/5V - 88
+G3/G5 V - 89
+G3V - 90
+G4 - 91
+G4 II-III - 92
+G4 IV - 93
+G4 V - 94
+G5 - 95
+G5 III - 96
+G5 III/IV - 97
+G5 IV - 98
+G5 IV/V - 99
+G5 V - 100
+G5IV - 101
+G5V - 102
+G6 - 103
+G6 III - 104
+G6 IV - 105
+G6 V - 106
+G6/8 V - 107
+G7 - 108
+G7 III - 109
+G7 IV - 110
+G7 IV-V - 111
+G7 IV/V - 112
+G7 V - 113
+G7 V Fe-1 CH-0.5 - 114
+G8 - 115
+G8 III - 116
+G8 III/IV - 117
+G8 IV - 118
+G8 IV (+ G) - 119
+G8 IV/V - 120
+G8 V - 121
+G8 V+ - 122
+G8.5V - 123
+G8/9 IV - 124
+G8/G9 - 125
+G8/K0 - 126
+G8/K0 III - 127
+G8/K0 IV - 128
+G8V - 129
+G9 - 130
+G9 III - 131
+G9 IV - 132
+G9 IV-V - 133
+G9 V - 134
+G9 V CN+1 - 135
+G9/K0 - 136
+K - 137
+K V - 138
+K0 - 139
+K0 III - 140
+K0 III-IV - 141
+K0 III/IV - 142
+K0 IV - 143
+K0 IV-V - 144
+K0 IV/V - 145
+K0 V - 146
+K0.0 V - 147
+K0.5 V - 148
+K0/1 III - 149
+K0IIIvar - 150
+K0V - 151
+K1 - 152
+K1 III - 153
+K1 IIIb Fe-0.5 - 154
+K1 IIIb-IV - 155
+K1 IV - 156
+K1 IV-V - 157
+K1 V - 158
+K1 V(P) - 159
+K1-K2 - 160
+K1.5 III - 161
+K1.5 V - 162
+K1/2 V - 163
+K1/2III - 164
+K1/2V - 165
+K1/K2 V - 166
+K1III(+M) - 167
+K1V - 168
+K2 - 169
+K2 II - 170
+K2 III - 171
+K2 III/ IV - 172
+K2 IV - 173
+K2 V - 174
+K2.5 V - 175
+K2III - 176
+K2V - 177
+K3 - 178
+K3 III - 179
+K3 IV - 180
+K3 V - 181
+K3.5 V - 182
+K3/4 IV - 183
+K3V - 184
+K4 - 185
+K4 III - 186
+K4 V - 187
+K4.5 - 188
+K4.5 V - 189
+K4/5 V - 190
+K5 - 191
+K5 III - 192
+K5 V - 193
+K5.5 - 194
+K5/M0V - 195
+K5V - 196
+K5e - 197
+K6 - 198
+K6 V - 199
+K6-K7 - 200
+K7 - 201
+K7 V - 202
+K7-M0 V - 203
+K7.5 V - 204
+K7/M0 V - 205
+K7V - 206
+K7e V - 207
+K8 V - 208
+K9 V - 209
+K9 V/M0 V - 210
+L1.5 - 211
+M - 212
+M 4.5V - 213
+M V - 214
+M(3.5+/-0.5) V - 215
+M(6.1 +/- 0.7) V - 216
+M0 - 217
+M0 III - 218
+M0 V - 219
+M0.0 - 220
+M0.0 V - 221
+M0.5 - 222
+M0.5 V - 223
+M0.5 Ve - 224
+M0.5+/-0.5 V - 225
+M0.5-1.0 V - 226
+M0V: - 227
+M1 - 228
+M1 III - 229
+M1 V - 230
+M1.0 - 231
+M1.0 V - 232
+M1.0+/-0.5 - 233
+M1.5 - 234
+M1.5 V - 235
+M1.5V - 236
+M1/M2 V - 237
+M2 - 238
+M2 III - 239
+M2 V - 240
+M2+/-0.5 - 241
+M2.0 V - 242
+M2.0V - 243
+M2.5 - 244
+M2.5 III - 245
+M2.5 V - 246
+M2.5V - 247
+M2.5e - 248
+M2/3 V - 249
+M2V - 250
+M3 - 251
+M3 V - 252
+M3+/-1 - 253
+M3.0 - 254
+M3.0 V - 255
+M3.0V - 256
+M3.3 - 257
+M3.5 - 258
+M3.5 V - 259
+M3.5 Ve - 260
+M4 - 261
+M4 &#177 0.5 V - 262
+M4 V - 263
+M4+/-0.5 - 264
+M4.0 - 265
+M4.0 V - 266
+M4.5 V - 267
+M4.5+/-0.5 - 268
+M4.5V-M5V - 269
+M5 - 270
+M5 V - 271
+M5.0 V - 272
+M5.0+0.5-0.5 - 273
+M5.5 V - 274
+M5.5+/-0.5 - 275
+M5.5/M6 - 276
+M5V - 277
+M6 - 278
+M6 V - 279
+M6.5 - 280
+M7 - 281
+M7.0 V - 282
+M7.25 - 283
+M7.5 - 284
+M8 - 285
+M8.5 - 286
+M9 - 287
+M9-L1 - 288
+T8.5 - 289
+WD - 290
+m3 V - 291
+sdBV - 292
+
+
+
+18. S_RA:
+Right ascension of the host star, indicating its position in the sky.
+Impact: 0
+Sky position only; no effect on habitability.
+
+
+19. S_DEC:
+Declination of the host star, indicating its position in the sky.
+Impact: 0
+Sky position only; no effect on habitability.
+
+
+20. S_RA_STR:
+Right ascension in string format for easier interpretation.
+Impact: 0
+String format of position; no effect on habitability.
+
+
+21. S_DEC_STR:
+Declination in string format for easier interpretation.
+Impact: 0
+String format of position; no effect on habitability.
+
+
+22. S_MAG:
+Apparent magnitude of the host star, indicating its brightness as observed from Earth.
+Impact: 1
+Apparent brightness; minimal effect on habitability.
+
+
+23. S_DISTANCE:
+Distance of the host star from Earth, usually measured in light-years or parsecs.
+Impact: 0
+Distance from Earth; does not affect local habitability.
+
+
+24. S_TEMPERATURE:
+Surface temperature of the host star, typically measured in Kelvin.
+Impact: 9
+Star’s temperature is key for habitable zone and planet temperature.
+
+
+25. S_MASS:
+Mass of the host star relative to the Sun's mass.
+Impact: 8
+Star mass affects luminosity and habitable zone.
+
+
+26. S_RADIUS:
+Radius of the host star relative to the Sun's radius.
+Impact: 7
+Star radius influences luminosity and habitable zone.
+
+
+27. S_METALLICITY:
+Metal content of the host star, indicating the abundance of elements heavier than hydrogen and helium.
+Impact: 5
+Affects planet formation and composition, indirectly influences habitability.
+
+
+28. S_AGE:
+Estimated age of the host star, typically measured in billions of years.
+Impact: 6
+Older stars may allow more time for life to develop; too old may mean unstable conditions.
+
+
+29. S_LOG_LUM:
+Logarithmic luminosity of the host star relative to the Sun.
+Impact: 8
+Luminosity directly affects habitable zone and planet temperature.
+
+
+30. S_LOG_G:
+Logarithm of the surface gravity of the host star.
+Impact: 2
+Surface gravity of star; minor indirect effect.
+
+
+31. P_ESCAPE:
+Escape velocity of the exoplanet, describing the speed required to overcome its gravitational pull.
+Impact: 7
+Escape velocity affects atmosphere retention, important for habitability.
+
+
+32. P_POTENTIAL:
+Gravitational potential on the surface of the exoplanet.
+Impact: 5
+Gravitational potential relates to surface conditions.
+
+
+33. P_GRAVITY:
+Surface gravity of the exoplanet.
+Impact: 8
+Surface gravity affects atmosphere and water retention.
+
+
+34. P_DENSITY:
+Density of the exoplanet, often expressed in g/cm³.
+Impact: 9
+Density reveals composition (rocky or gaseous), crucial for habitability.
+
+
+35. P_HILL_SPHERE:
+Hill sphere radius of the exoplanet, representing the region of space where its gravity dominates over the host star's.
+Impact: 3
+Defines region of gravitational influence; minor effect.
+
+
+36. P_DISTANCE:
+Distance of the exoplanet from Earth, typically measured in light-years or parsecs.
+Impact: 0
+Distance from Earth; no effect on local habitability.
+
+
+37. P_PERIASTRON:
+Closest distance of the exoplanet to its host star during its orbit.
+Impact: 6
+Closest approach to star; affects temperature extremes.
+
+
+38. P_APASTRON:
+Farthest distance of the exoplanet from its host star during its orbit.
+Impact: 6
+Farthest distance from star; affects temperature extremes.
+
+
+39. P_DISTANCE_EFF:
+Effective distance of the exoplanet for radiation calculations.
+Impact: 8
+Effective distance for radiation; important for climate.
+
+
+40. P_FLUX:
+Stellar flux received by the exoplanet, often measured in W/m².
+Impact: 10
+Stellar flux received determines surface temperature and habitability.
+
+
+41. P_TEMP_EQUIL:
+Equilibrium temperature of the exoplanet, calculated assuming no atmosphere.
+Impact: 10
+Equilibrium temperature is a direct indicator of possible liquid water.
+
+
+42. P_TEMP_SURF:
+Estimated surface temperature of the exoplanet.
+Impact: 10
+Surface temperature is critical for life as we know it.
+
+
+43. P_TYPE:
+Classification of the exoplanet based on its composition or size (e.g., Gas Giant, Terrestrial).
+Impact: 9
+Planet type (rocky, gaseous) is fundamental for habitability.
+Planet Types:
+Jovian - 0
+Miniterran - 1
+Neptunian - 2
+Subterran - 3
+Superterran - 4
+Terran - 5
+
+
+44. S_TYPE_TEMP:
+Classification of the host star based on its temperature.
+Impact: 8
+Star temperature class affects habitable zone.
+Stellar Classes:
+A - 0
+B - 1
+BD - 2
+F - 3
+G - 4
+K - 5
+M - 6
+O - 7
+PSR - 8
+WD - 9
+
+
+45. S_RA_TXT:
+Right ascension of the host star in textual format.
+Impact: 0
+Textual format of position; no effect on habitability.
+
+
+46. S_DEC_TXT:
+Declination of the host star in textual format.
+Impact: 0
+Textual format of position; no effect on habitability.
+
+
+47. S_LUMINOSITY:
+Luminosity of the host star relative to the Sun.
+Impact: 9
+Star’s luminosity is central to habitable zone and planet temperature
+
+
+48. S_SNOW_LINE:
+Distance from the host star where temperatures allow volatile compounds to condense into solid ice grains.
+Impact: 7
+Snow line location affects planet formation and water presence.
+
+
+49. S_ABIO_ZONE:
+Region around the host star where abiogenesis (origin of life) is possible.
+Impact: 8
+Region where abiogenesis is possible; highly relevant for habitability.
+
+
+50. S_TIDAL_LOCK:
+Indicator of whether the host star exerts tidal locking on its orbiting exoplanets.
+Impact: 7
+Tidal locking can affect climate stability and habitability.
+
+
+51. P_HABZONE_OPT:
+Optimal habitable zone distance for the exoplanet, where conditions for life are most favorable.
+Impact: 10
+Optimal habitable zone distance is critical for life.
+
+
+52. P_HABZONE_CON:
+Conservative estimate of the habitable zone distance for the exoplanet.
+Impact: 10
+Conservative habitable zone estimate is critical for life.
+
+
+53. P_TYPE_TEMP:
+Classification of the exoplanet based on temperature (e.g., Hot, Warm, Cold).
+Impact: 8
+Planet temperature class is important for habitability.
+Temperature types:
+Cold - 0
+Warm - 1
+Hot - 2
+
+
+54. P_HABITABLE:
+Binary indicator (0 or 1) of whether the exoplanet is considered potentially habitable.
+Impact: 10
+Direct indicator of potential habitability.
+
+
+55. S_CONSTELLATION:
+Name of the constellation where the host star is located.
+Impact: 0
+Constellation name; no effect on habitability.
+
+
+56. S_CONSTELLATION_ABR:
+Abbreviation of the constellation name.
+Impact: 0
+Constellation abbreviation; no effect on habitability
+
+
+57. S_CONSTELLATION_ENG:
+Full English name of the constellation
+Impact: 0
+Full English name of constellation; no effect on habitability.
